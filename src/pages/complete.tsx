@@ -20,8 +20,8 @@ export default function Complete() {
 
   return (
     <Layout>
-      <section className="flex items-center w-full justify-center">
-        <div className="basis-1/2 flex flex-col justify-center items-center self-center">
+      <section className="flex lg:flex-row flex-col items-center w-full justify-center">
+        <div className="basis-1/2 flex flex-col justify-center items-center self-center lg:py-0 py-12">
           {clientSecret ? (
             <Elements
               options={{ clientSecret, appearance: { theme: "stripe" } }}
