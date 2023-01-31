@@ -3,6 +3,7 @@
 Use this template to sell your Ebook product with Next.js and Stripe.
 
 🔗 Live Demo: https://ebook-sales-site.vercel.app/
+
 📖 Read more about this template:
 
 Tech used:
