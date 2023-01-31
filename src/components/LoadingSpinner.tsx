@@ -1,11 +1,15 @@
 import Image from "next/image";
 
-export const LoadingSpinner = () => (
+export const LoadingSpinner = ({
+  size = "default",
+}: {
+  size?: "default" | "large";
+}) => (
   <Image
     alt="loader"
     src="/loading-spinner.svg"
-    height={24}
-    width={24}
+    height={size === "default" ? 20 : 32}
+    width={size === "default" ? 20 : 32}
     className="animate-spin self-center"
   />
 );

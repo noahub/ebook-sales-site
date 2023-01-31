@@ -53,7 +53,7 @@ export default function Download() {
       {status === "processing" && (
         <div>
           <h1 className="text-4xl mb-4 font-bold">Processing transaction</h1>
-          <LoadingSpinner />
+          <LoadingSpinner size="large" />
         </div>
       )}
       {(status === "error" || status === "requires_payment_method") && (
