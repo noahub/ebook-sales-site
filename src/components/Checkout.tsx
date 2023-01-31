@@ -4,6 +4,7 @@ import {
   useElements,
   useStripe,
 } from "@stripe/react-stripe-js";
+import Image from "next/image";
 import { FormEventHandler, useState } from "react";
 import { LoadingSpinner } from "./LoadingSpinner";
 
@@ -60,6 +61,10 @@ export default function CheckoutForm() {
           {isLoading ? <LoadingSpinner /> : "Pay now"}
         </span>
       </button>
+      <span className="text-sm text-gray-400 flex gap-2 justify-center my-2">
+        <Image alt="lock icon" src="/lock.svg" width={15} height={15} />
+        Payments are secure and encrypted
+      </span>
       {hint && (
         <div
           id="payment-message"
