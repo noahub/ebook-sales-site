@@ -13,7 +13,7 @@ export default function Home() {
   const [clientSecret, setClientSecret] = useState("");
 
   useEffect(() => {
-    // Create PaymentIntent as soon as the page loads
+    // Create PaymentIntent on mount
     fetch("/api/payment-intent", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
