@@ -12,7 +12,12 @@ export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse
 ) {
-  if (req.method !== "POST") {
+  const refUrl = new URL(req.headers.referer || "");
+
+  if (
+    req.method !== "POST" ||
+    !(process.env.NEXT_PUBLIC_RETURN_DOMAIN || "").includes(refUrl.host)
+  ) {
     res.status(400).json({ message: "Not allowed" });
     return;
   }
