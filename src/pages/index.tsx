@@ -25,7 +25,7 @@ export default function Home() {
 
   return (
     <Layout className="flex flex-col gap-8 bg-white relative min-h-screen">
-      <section className="flex flex-col justify-center w-full p-12 lg:p-24 lg:pb-12">
+      <section className="flex flex-col justify-center w-full p-12 lg:px-24 lg:py-12">
         <div className="">
           <h1 className="text-8xl mb-4">
             Your{" "}
@@ -44,7 +44,7 @@ export default function Home() {
         <div className="basis-1/2 flex justify-center">
           <div className="bg-white border border-gray-100 p-12 py-8 shadow-xl min-w-[350px] min-h-[350px] h-fit transition-all duration-200">
             <div className="mb-4">
-              <h2 className="text-2xl">Buy Ebook for</h2>
+              <h2 className="text-xl">Get Ebook for</h2>
               <span className="text-4xl font-bold">$19.99</span>
             </div>
             {clientSecret ? (
